@@ -1,7 +1,18 @@
 async function fetchPosts() {
-    const url = 'data/posts.json';
-
+    const url = CONFIG.postsUrl;
     const response = await fetch(url);
     const posts = await response.json();
     return posts;
+}
+
+async function savePost(post) {
+    const url = CONFIG.postsUrl;
+    const body = JSON.stringify(post);
+    await fetch(url, {
+        headers: {
+            "Content-Type": "application/json"
+        },
+        method: "post",
+        body
+    });
 }

@@ -5,6 +5,10 @@ async function main() {
     posts.forEach((post) => {
         renderPost(post)
     })
+
+    renderAddPostForm((post) => {
+        savePost(post)
+    })
 }
 
 // const storage = new AppStorage();

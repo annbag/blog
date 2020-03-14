@@ -1,7 +1,7 @@
 # projekt blogowy
 
 * [x] Posty: Prezentacja wielu postów (R)
-* [ ] Posty: Dodawanie pojedynczego posta (C)
+* [x] Posty: Dodawanie pojedynczego posta (C)
 * [ ] Posty: Usuwanie pojedynczego posta (D)
 * [ ] Posty: Edycja pojedynczego posta (U)
 * [ ] Komentarze: Prezentacja wielu komentarzy (R)

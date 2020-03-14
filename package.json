@@ -1,0 +1,20 @@
+{
+    "name": "blog",
+    "version": "1.0.0",
+    "scripts": {
+        "start-server": "json-server data/posts.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/annbag/blog.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/annbag/blog/issues"
+    },
+    "homepage": "https://github.com/annbag/blog#readme",
+    "devDependencies": {
+        "json-server": "^0.16.1"
+    }
+}
