@@ -1,5 +1,5 @@
 function renderAddPostForm(cb) {
-    const addPostForm = document.createElement('div');
+    const $div = document.createElement('div');
     const template = `
         <form class="add-post-form">
             <div class="form-group">
@@ -8,15 +8,15 @@ function renderAddPostForm(cb) {
             </div>
         </form>`;
 
-    addPostForm.innerHTML = template;
+    $div.innerHTML = template;
     const addPost = document.querySelector('.add-post');
-    addPost.appendChild(addPostForm);
+    addPost.appendChild($div);
 
     const $form = document.querySelector('.add-post-form')
     $form.addEventListener('submit', (e) => {
         e.preventDefault();
-        const a = document.querySelector('textarea')
-        const post = { body: a.value };
+        const $textarea = document.querySelector('textarea')
+        const post = { body: $textarea.value };
         cb(post);
     })
 }
