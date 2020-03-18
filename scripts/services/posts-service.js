@@ -16,3 +16,10 @@ async function savePost(post) {
         body
     });
 }
+
+async function removePost(id) {
+    const url = CONFIG.postsUrl + `/${id}`
+    await fetch(url, {
+        method: "delete"
+    });
+}
