@@ -8,5 +8,5 @@ async function main() {
     renderAddPostForm((post) => {
         savePost(post)
     });
-    aa(posts);
+    checkClickDelBtn(posts);
 }

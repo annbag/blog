@@ -16,7 +16,9 @@ function renderAddPostForm(cb) {
     $form.addEventListener('submit', (e) => {
         e.preventDefault();
         const $textarea = document.querySelector('textarea')
-        const post = { body: $textarea.value };
-        cb(post);
+        if ($textarea.value) {
+            const post = { id: Date.now(), body: $textarea.value };
+            cb(post);
+        }
     })
 }

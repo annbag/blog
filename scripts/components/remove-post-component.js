@@ -1,4 +1,4 @@
-function aa(posts) {
+function checkClickDelBtn(posts) {
     const btns = document.querySelectorAll('.del');
 
     for (let i = 0; i < btns.length; i++) {
