@@ -1,48 +1,37 @@
 {
-  "posts": [
-    {
-      "id": 1584042702958,
-      "body": "ttttt"
-    },
-    {
-      "id": 1584042713271,
-      "body": "Aperiam nihil voluptatem animi. Obcaecati numquam?"
-    },
-    {
-      "body": "Eligendi maxime beatae pariatur ipsum quia quo tempora enim veniam culpa. Quas acere expedita laborum magni doloribus voluptates ut tempora?",
-      "id": 1584042713282
-    },
-    {
-      "body": "Eos natus ratione distinctio? Accusamus inventore similique sunt voluptates saepe in maxime adipisci praesentium repellendus ",
-      "id": 1584042713283
-    },
-    {
-      "body": "sssss",
-      "id": 1584042713284
-    },
-    {
-      "id": 1584699301250,
-      "body": "aaaaa"
-    },
-    {
-      "id": 1584699465367,
-      "body": "cccc"
-    },
-    {
-      "id": 1584699493816,
-      "body": "bbb"
-    },
-    {
-      "id": 1584700382846,
-      "body": "a"
-    },
-    {
-      "id": 1584703364388,
-      "body": "zzz"
-    },
-    {
-      "id": 1584708343015,
-      "body": "www"
-    }
-  ]
+    "posts": [
+        {
+            "id": 1584042702958,
+            "body": "dhvbfghj vjhv bcjhsbdvx xdnvbsdkeyh hdjduue ncchyeuwiphjydgb",
+            "comments": [
+                "Comment 1 - Aperiam nihil voluptatem animi. Obcaecati numquam",
+                "Comment 2 ☘ ☘",
+                "Comment 3"
+            ]
+        },
+        {
+            "id": 1584042713271,
+            "body": "Aperiam nihil voluptatem animi. Obcaecati numquam?",
+            "comments": [
+                "Comment a 😉",
+                "Comment b",
+                "Comment b"
+            ]
+        },
+        {
+            "body": "Eligendi maxime beatae pariatur ipsum quia quo tempora enim veniam culpa. Quas acere expedita laborum magni doloribus voluptates ut tempora?",
+            "id": 1584042713282,
+            "comments": [
+                "Lorem ipsum dolor sit amet consectetur adipisicing."
+            ]
+        },
+        {
+            "body": "Eos natus ratione distinctio? Accusamus inventore similique sunt voluptates saepe in maxime adipisci praesentium repellendus ",
+            "id": 1584042713283,
+            "comments": [
+                "something something 1",
+                "something something 2"
+            ]
+        }
+    ]
 }
