@@ -3,8 +3,9 @@ function renderPost(post) {
     const template = `
         <div class="card mb-3" style="width: 18rem;">
             <div class="card-body">
-                <p class="card-text">${post.body}</p>
-                <button class="btn btn-danger del">usuń wpis</button>
+                <p class="card-text text-${post.id}">${post.body}</p>
+                <button class="btn btn-warning edit" data-id="${post.id}" data-action="edit">edytuj wpis</button>
+                <button class="btn btn-danger del" data-id="${post.id}" data-action="delete">usuń wpis</button>
             </div>
         </div>`;
     $div.innerHTML = template;

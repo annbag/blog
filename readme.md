@@ -3,7 +3,7 @@
 * [x] Posty: Prezentacja wielu postów (R)
 * [x] Posty: Dodawanie pojedynczego posta (C)
 * [x] Posty: Usuwanie pojedynczego posta (D)
-* [ ] Posty: Edycja pojedynczego posta (U)
+* [x] Posty: Edycja pojedynczego posta (U)
 * [ ] Komentarze: Prezentacja wielu komentarzy (R)
 * [ ] Komentarze: Dodawanie pojedynczego komentarza (C)
 * [ ] Komentarze: Usuwanie pojedynczego komentarza (D)

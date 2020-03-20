@@ -23,3 +23,15 @@ async function removePost(id) {
         method: "delete"
     });
 }
+
+async function editPost(id, post) {
+    const url = CONFIG.postsUrl + `/${id}`;
+    const body = JSON.stringify(post)
+    await fetch(url, {
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        method: "PATCH",
+        body
+    });
+}
