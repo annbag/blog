@@ -4,7 +4,7 @@
 * [x] Posty: Dodawanie pojedynczego posta (C)
 * [x] Posty: Usuwanie pojedynczego posta (D)
 * [x] Posty: Edycja pojedynczego posta (U)
-* [ ] Komentarze: Prezentacja wielu komentarzy (R)
+* [x] Komentarze: Prezentacja wielu komentarzy (R)
 * [ ] Komentarze: Dodawanie pojedynczego komentarza (C)
 * [ ] Komentarze: Usuwanie pojedynczego komentarza (D)
 * [ ] Misc: Potwierdzenie usuwania posta i komentarza
