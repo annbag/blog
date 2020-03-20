@@ -17,7 +17,7 @@ function renderAddPostForm(cb) {
         e.preventDefault();
         const $textarea = document.querySelector('textarea')
         if ($textarea.value) {
-            const post = { id: Date.now(), body: $textarea.value };
+            const post = { id: Date.now(), body: $textarea.value, comments: [] };
             cb(post);
         }
     })
