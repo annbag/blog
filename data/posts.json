@@ -1,42 +1,19 @@
 {
-  "posts": [
-    {
-      "id": 1584042702958,
-      "body": "dhvbfghj vjhv bcjhsbdvx xdnvbsdkeyh hdjduue ncchyeuwiphjydgb",
-      "comments": [
-        "Comment 1 - Aperiam nihil voluptatem animi. Obcaecati numquam",
-        "Comment 2 ☘ ☘",
-        "Comment 3"
-      ]
-    },
-    {
-      "id": 1584042713271,
-      "body": "Aperiam nihil voluptatem animi. Obcaecati numquam?",
-      "comments": [
-        "Comment a 😉",
-        "Comment b",
-        "Comment b"
-      ]
-    },
-    {
-      "body": "Eligendi maxime beatae pariatur ipsum quia quo tempora enim veniam culpa. Quas acere expedita laborum magni doloribus voluptates ut tempora?",
-      "id": 1584042713282,
-      "comments": [
-        "Lorem ipsum dolor sit amet consectetur adipisicing."
-      ]
-    },
-    {
-      "body": "Eos natus ratione distinctio? Accusamus inventore similique sunt voluptates saepe in maxime adipisci praesentium repellendus ",
-      "id": 1584042713283,
-      "comments": [
-        "something something 1",
-        "something something 2"
-      ]
-    },
-    {
-      "id": 1584734930152,
-      "body": "jfhfhfur bvkjsdv kxdlmzsvdz cmcksdmc csdkclms",
-      "comments": []
-    }
-  ]
+    "posts": [
+        {
+            "id": 1584042702958,
+            "body": "baaa vgvgdh aa dhvbfghj vjhv bcjhsbdvx xdnvbsdkeyh hdjduue ncchyeuwiphjydgb",
+            "comments": []
+        },
+        {
+            "id": 1584042713271,
+            "body": "Aperiam nihil voluptatem animi. Obcaecati numquam?",
+            "comments": []
+        },
+        {
+            "body": "Eligendi maxime beatae pariatur ipsum quia quo tempora enim veniam culpa. Quas acere expedita laborum magni doloribus voluptates ut tempora?",
+            "id": 1584042713282,
+            "comments": []
+        }
+    ]
 }

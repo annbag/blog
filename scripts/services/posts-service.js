@@ -5,10 +5,10 @@ async function fetchPosts() {
     return posts;
 }
 
-async function savePost(post) {
+function savePost(post) {
     const url = CONFIG.postsUrl;
     const body = JSON.stringify(post);
-    await fetch(url, {
+    fetch(url, {
         headers: {
             "Content-Type": "application/json"
         },
@@ -17,17 +17,17 @@ async function savePost(post) {
     });
 }
 
-async function removePost(id) {
+function removePost(id) {
     const url = CONFIG.postsUrl + `/${id}`
-    await fetch(url, {
+    fetch(url, {
         method: "delete"
     });
 }
 
-async function editPost(id, post) {
-    const url = CONFIG.postsUrl + `/${id}`;
+function editPost(post) {
+    const url = CONFIG.postsUrl + `/${post.id}`;
     const body = JSON.stringify(post)
-    await fetch(url, {
+    fetch(url, {
         headers: {
             'Content-Type': 'application/json'
         },

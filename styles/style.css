@@ -1,0 +1,12 @@
+.hidden {
+    display: none;
+}
+
+.post-body-edit {
+    width: 100%;
+    min-height: 78px;
+}
+
+.comments:empty {
+    display: none;
+}

@@ -1,4 +1,5 @@
-function renderComments(comments, id) {
+function renderComments(comments, $post) {
+    if (comments.length === 0) { return }
     const $ul = document.createElement('ul');
     $ul.classList.add('list-group');
     $ul.classList.add('mb-4')
@@ -7,7 +8,7 @@ function renderComments(comments, id) {
         $li.classList.add('list-group-item')
         $li.textContent = comment;
         $ul.appendChild($li);
-        const $div = document.querySelector(`.card-${id}`).parentElement;
-        $div.appendChild($ul);
     });
+    const $comments = $post.querySelector('.comments');
+    $comments.appendChild($ul);
 }
