@@ -6,7 +6,7 @@
 * [x] Posty: Edycja pojedynczego posta (U)
 * [x] Komentarze: Prezentacja wielu komentarzy (R)
 * [x] Komentarze: Dodawanie pojedynczego komentarza (C)
-* [] Komentarze: Usuwanie pojedynczego komentarza (D)
+* [x] Komentarze: Usuwanie pojedynczego komentarza (D)
 * [ ] Misc: Potwierdzenie usuwania posta i komentarza
 * [ ] Misc: Zabezpieczenie przed wpisaniem jednego długiego string-a
 * [ ] Komentarze: Prezentacja fikcyjnych awatarów

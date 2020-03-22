@@ -1,38 +1,38 @@
 {
-  "posts": [
-    {
-      "id": 1584042702958,
-      "body": "bbb aaa baaa vgvgdh aa dhvbfghj vjhv bcjhsbdvx xdnvbsdkeyh hdjduue ",
-      "comments": [
+    "posts": [
         {
-          "id": "comment-1584870239434",
-          "value": "Lorem, ipsum dolor sit amet consectetur"
+            "id": 1584042702958,
+            "body": "bbb aaa baaa vgvgdh aa dhvbfghj vjhv bcjhsbdvx xdnvbsdkeyh hdjduue ",
+            "comments": [
+                {
+                    "id": "comment-1584870239434",
+                    "value": "Lorem, ipsum dolor sit amet consectetur"
+                },
+                {
+                    "id": "comment-1584877648913",
+                    "value": "something something "
+                }
+            ]
         },
         {
-          "id": "comment-1584877648913",
-          "value": "something something "
-        }
-      ]
-    },
-    {
-      "id": 1584042713271,
-      "body": "Aperiam nihil voluptatem animi. Obcaecati numquam?",
-      "comments": [
+            "id": 1584042713271,
+            "body": "Aperiam nihil voluptatem animi. Obcaecati numquam?",
+            "comments": [
+                {
+                    "id": "comment-1584874435501",
+                    "value": "aa aa aa bbb"
+                }
+            ]
+        },
         {
-          "id": "comment-1584874435501",
-          "value": "aa aa aa bbb"
+            "body": "Eligendi maxime beatae pariatur ipsum quia quo tempora enim veniam culpa. Quas acere expedita laborum magni doloribus voluptates ut tempora?",
+            "id": 1584042713282,
+            "comments": [
+                {
+                    "id": "comment-1584874452565",
+                    "value": "hello hello"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "body": "Eligendi maxime beatae pariatur ipsum quia quo tempora enim veniam culpa. Quas acere expedita laborum magni doloribus voluptates ut tempora?",
-      "id": 1584042713282,
-      "comments": [
-        {
-          "id": "comment-1584874452565",
-          "value": "hello hello"
-        }
-      ]
-    }
-  ]
+    ]
 }

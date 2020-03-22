@@ -34,7 +34,12 @@ function renderComments(post, $post) {
                 isEditEnabled = true;
                 renderEditComment(comment, $post);
             }
-        })
+        });
+        $delBtn.addEventListener('click', () => {
+            const filteredComments = post.comments.filter(x => x.id !== comment.id);
+            post.comments = filteredComments;
+            editPost(post);
+        });
     });
     const $comments = $post.querySelector('.comments');
     $comments.appendChild($ul);
