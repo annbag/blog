@@ -10,3 +10,31 @@
 .comments:empty {
     display: none;
 }
+
+.comment-body-edit {
+    width: 100%;
+}
+
+.comment-btns {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit-comment-btn,
+.del-comment-btn {
+    background-color: rgba(0, 0, 0, .03);
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 2px;
+    margin: 2px;
+    color: rgba(0, 0, 0, .35);
+}
+.edit-comment-btn:hover,
+.del-comment-btn:hover {
+    background-color: rgba(0, 0, 0, .13);
+    border: 1px solid rgba(0, 0, 0, .135);    
+    color: rgba(0, 0, 0, .45);
+    cursor: pointer;
+}

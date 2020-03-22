@@ -5,7 +5,7 @@ async function main() {
     posts.forEach((post) => {
         const $post = renderPost(post);
         renderAddCommentForm(post, $post);
-        renderComments(post.comments, $post);
+        renderComments(post, $post);
     });
     renderAddPostForm((post) => {
         savePost(post);
