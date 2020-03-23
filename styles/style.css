@@ -26,10 +26,15 @@
     font-size: 12px;
     color: rgba(0, 0, 0, .35);
 }
+
 .edit-comment-btn:hover,
 .del-comment-btn:hover {
     background-color: rgba(0, 0, 0, .13);
-    border: 1px solid rgba(0, 0, 0, .135);    
+    border: 1px solid rgba(0, 0, 0, .135);
     color: rgba(0, 0, 0, .45);
     cursor: pointer;
+}
+
+.comments-number {
+    font-size: 12px;
 }

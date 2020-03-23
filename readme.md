@@ -10,6 +10,6 @@
 * [x] Misc: Potwierdzenie usuwania posta i komentarza
 * [ ] Misc: Zabezpieczenie przed wpisaniem jednego długiego string-a
 * [ ] Komentarze: Prezentacja fikcyjnych awatarów
-* [ ] Komentarze: Licznik komentarzy
+* [x] Komentarze: Licznik komentarzy
 * [ ] Posty: Prezentacja pojedynczego posta (R)
 * [x] Komentarze: Edycja pojedynczego komentarza (U)

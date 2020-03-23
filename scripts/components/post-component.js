@@ -30,6 +30,7 @@ function renderPost(post) {
     })
     const $posts = document.querySelector('.posts');
     $posts.appendChild($post);
+    displayNumberComments(post.comments, $post)
     return $post;
 }
 
@@ -51,4 +52,25 @@ function renderEditPostForm(post, $post) {
     $textarea.classList.add('post-body-edit');
     $textarea.value = post.body;
     $postContent.insertBefore($textarea, $postBody);
+}
+
+function displayNumberComments(comments, $post) {
+    const $div = document.createElement('div');
+    const template = `
+        <div class="d-flex justify-content-end comments-number">
+            <p class="mt-3 mb-0">${comments.length} ${setCorrectFormComment(comments)}</p>
+        </div>`;
+    $div.innerHTML = template;
+    const $postContent = $post.querySelector('.post-content');
+    $postContent.appendChild($div);
+}
+
+function setCorrectFormComment(comments) {
+    if (comments.length === 1) {
+        return 'komentarz';
+    } else if (comments.length >= 5) {
+        return 'komentarzy';
+    } else {
+        return 'komentarze';
+    }
 }
