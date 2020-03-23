@@ -2,65 +2,58 @@ function renderComments(post, $post) {
     if (post.comments.length === 0) { return }
     const $ul = document.createElement('ul');
     $ul.classList.add('list-group');
-    $ul.classList.add('mt-3')
+    $ul.classList.add('mt-3');
     post.comments.forEach(comment => {
         const $li = document.createElement('li');
+        $li.classList.add('media');
         $li.classList.add('list-group-item');
-        $li.classList.add('comment-content');
-        const $p = document.createElement('p');
-        $p.classList.add('comment-body');
-        $p.textContent = comment.value;
-        const $div = document.createElement('div');
-        $div.classList.add('comment-btns');
-        const templateEditIcon = `<i class="fas fa-pen"></i>`;
-        const $editBtn = document.createElement('button');
-        $editBtn.classList.add('edit-comment-btn');
-        $editBtn.innerHTML = templateEditIcon;
-        const templateDelIcon = `<i class="fas fa-trash-alt"></i>`;
-        const $delBtn = document.createElement('button');
-        $delBtn.classList.add('del-comment-btn');
-        $delBtn.innerHTML = templateDelIcon;
-        $div.appendChild($editBtn);
-        $div.appendChild($delBtn)
-        $li.appendChild($p);
-        $li.appendChild($div);
-        $ul.appendChild($li);
+        $li.classList.add('d-flex');
+        const template = `
+            <p class="media-body comment-body mb-0">${comment.value}</p>
+            <div class="comment-btns row justify-content-end">
+                <button class="edit-comment-btn"><i class="fas fa-pen"></i></button>
+                <div class="w-100"></div>
+                <button class="del-comment-btn"><i class="fas fa-trash-alt"></i></button>
+            </div>`;
+        $li.innerHTML = template;
+        const $editBtn = $li.querySelector('.edit-comment-btn');
         let isEditEnabled = false;
         $editBtn.addEventListener('click', (e) => {
-            if(isEditEnabled) {
+            if (isEditEnabled) {
                 isEditEnabled = false;
-                saveEditComment(post, comment, $post);
+                saveEditComment(post, comment, $li);
             } else {
                 isEditEnabled = true;
-                renderEditComment(comment, $post);
+                renderEditComment(comment, $li);
             }
         });
+        const $delBtn = $li.querySelector('.del-comment-btn');
         $delBtn.addEventListener('click', () => {
             const filteredComments = post.comments.filter(x => x.id !== comment.id);
             post.comments = filteredComments;
             editPost(post);
         });
+        $ul.appendChild($li);
     });
     const $comments = $post.querySelector('.comments');
     $comments.appendChild($ul);
 }
 
-function saveEditComment(post, comment, $post) {
-    const $input = $post.querySelector('.comment-body-edit');
+function saveEditComment(post, comment, $li) {
+    const $input = $li.querySelector('.comment-body-edit');
     comment.value = $input.value;
     $input.remove();
-    const $commentBody = $post.querySelector('.comment-body');
+    const $commentBody = $li.querySelector('.comment-body');
     $commentBody.textContent = comment.value;
     $commentBody.classList.remove('hidden');
     editPost(post);
 }
 
-function renderEditComment(comment, $post) {
-    const $commentContent = $post.querySelector('.comment-content');
-    const $commentBody = $post.querySelector('.comment-body');
+function renderEditComment(comment, $li) {
+    const $commentBody = $li.querySelector('.comment-body');
     $commentBody.classList.add('hidden');
     const $input = document.createElement('input');
     $input.classList.add('comment-body-edit');
     $input.value = comment.value;
-    $commentContent.insertBefore($input, $commentBody);
+    $li.insertBefore($input, $commentBody);
 }
