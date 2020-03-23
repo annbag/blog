@@ -24,7 +24,9 @@ function renderPost(post) {
     const $btnDel = $post.querySelector('.del');
     $btnDel.addEventListener('click', () => {
         const id = post.id;
-        removePost(id)
+        renderConfirmDeletionPopup(() => {
+            removePost(id);
+        })
     })
     const $posts = document.querySelector('.posts');
     $posts.appendChild($post);

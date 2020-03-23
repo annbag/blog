@@ -29,14 +29,20 @@ function renderComments(post, $post) {
         });
         const $delBtn = $li.querySelector('.del-comment-btn');
         $delBtn.addEventListener('click', () => {
-            const filteredComments = post.comments.filter(x => x.id !== comment.id);
-            post.comments = filteredComments;
-            editPost(post);
+            renderConfirmDeletionPopup(() => {
+                removeComment(post, comment);
+            });
         });
         $ul.appendChild($li);
     });
     const $comments = $post.querySelector('.comments');
     $comments.appendChild($ul);
+}
+
+function removeComment(post, comment) {
+    const filteredComments = post.comments.filter(x => x.id !== comment.id);
+    post.comments = filteredComments;
+    editPost(post);
 }
 
 function saveEditComment(post, comment, $li) {
