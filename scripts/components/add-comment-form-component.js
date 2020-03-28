@@ -1,4 +1,4 @@
-function renderAddCommentForm(post, $post) {
+function renderAddCommentForm(post, $post, cb) {
     const $div = document.createElement('div');
     const template = `
         <form class="add-comment-form">
@@ -14,9 +14,9 @@ function renderAddCommentForm(post, $post) {
         e.preventDefault();
         const $newComment = $comments.querySelector('.new-comment');
         const id = 'comment-' + Date.now();
-        const value = $newComment.value;
-        post.comments.push({ id, value });
-        editPost(post);
+        const body = $newComment.value;
+        const comment = {id, body}
+        cb(comment);
         $newComment.value = '';
     })
 }

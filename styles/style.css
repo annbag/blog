@@ -7,7 +7,7 @@
     min-height: 78px;
 }
 
-.comments:empty {
+.comments ul:empty {
     display: none;
 }
 

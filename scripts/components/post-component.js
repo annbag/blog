@@ -1,7 +1,7 @@
 function renderPost(post) {
     const $post = document.createElement('div');
     const template = `
-        <div class="card mb-3" style="width: 18rem;">
+        <div class="card mb-3">
             <div class="card-body post-content">
                 <p class="card-text post-body">${post.body}</p>
                 <button class="btn btn-warning edit">edytuj wpis</button>
@@ -25,11 +25,12 @@ function renderPost(post) {
     $btnDel.addEventListener('click', () => {
         const id = post.id;
         renderConfirmDeletionPopup(() => {
+            $post.remove();
             removePost(id);
         })
     })
     const $posts = document.querySelector('.posts');
-    $posts.appendChild($post);
+    $posts.insertBefore($post, $posts.firstElementChild);
     displayNumberComments(post.comments, $post)
     return $post;
 }
@@ -68,7 +69,7 @@ function displayNumberComments(comments, $post) {
 function setCorrectFormComment(comments) {
     if (comments.length === 1) {
         return 'komentarz';
-    } else if (comments.length >= 5) {
+    } else if (comments.length >= 5 || comments.length === 0) {
         return 'komentarzy';
     } else {
         return 'komentarze';
