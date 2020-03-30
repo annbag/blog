@@ -21,6 +21,7 @@ function renderComment($ul, post, comment, cb) {
     $li.classList.add('list-group-item');
     $li.classList.add('d-flex');
     const template = `
+        <div class="avatar mr-3 d-flex align-item-start"><span class="fas fa-user-circle"></span></div>
         <p class="media-body comment-body mb-0">${comment.body}</p>
         <div class="comment-btns row justify-content-end">
             <button class="edit-comment-btn"><i class="fas fa-pen"></i></button>

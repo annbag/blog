@@ -9,7 +9,7 @@
 * [x] Komentarze: Usuwanie pojedynczego komentarza (D)
 * [x] Misc: Potwierdzenie usuwania posta i komentarza
 * [x] Misc: Zabezpieczenie przed wpisaniem jednego długiego string-a
-* [ ] Komentarze: Prezentacja fikcyjnych awatarów
+* [x] Komentarze: Prezentacja fikcyjnych awatarów
 * [x] Komentarze: Licznik komentarzy
 * [ ] Posty: Prezentacja pojedynczego posta (R)
 * [x] Komentarze: Edycja pojedynczego komentarza (U)
