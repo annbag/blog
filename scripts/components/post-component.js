@@ -31,7 +31,8 @@ function renderPost(post) {
     })
     const $posts = document.querySelector('.posts');
     $posts.insertBefore($post, $posts.firstElementChild);
-    displayNumberComments(post.comments, $post)
+    displayNumberComments(post.comments, $post);
+    displayDate(post, $post);
     return $post;
 }
 
@@ -74,4 +75,24 @@ function setCorrectFormComment(comments) {
     } else {
         return 'komentarze';
     }
+}
+
+function displayDate(post, $post) {
+    const $div = document.createElement('div');
+    $div.classList.add('date');
+    const dayNumber = new Date(post.id).getDate()
+    const monthNumber = new Date(post.id).getMonth();
+    const monthName = displayMonthName(monthNumber);
+    const time = `${new Date(post.id).getHours()}:${new Date(post.id).getMinutes()}`
+    const template = `
+        <a href="">${dayNumber} ${monthName} ${time}</a>
+    `
+    $div.innerHTML = template;
+    const $postContent = $post.querySelector('.post-content');
+    $postContent.prepend($div);
+}
+
+function displayMonthName(monthNumber) {
+    const monthArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    return monthArray[monthNumber];
 }
