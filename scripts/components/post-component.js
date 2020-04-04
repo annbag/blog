@@ -80,12 +80,11 @@ function setCorrectFormComment(comments) {
 function displayDate(post, $post) {
     const $div = document.createElement('div');
     $div.classList.add('date');
-    const dayNumber = new Date(post.date).getDate()
-    const monthNumber = new Date(post.date).getMonth();
-    const monthName = displayMonthName(monthNumber);
-    const time = `${new Date(post.date).getHours()}:${new Date(post.date).getMinutes()}`
+    const date1 = displayDate3(post);
+    const date2 = displayDate2(post);
+
     const template = `
-        <a href="">${dayNumber} ${monthName} ${time}</a>
+        <a href="">${date1} ${date2}</a>
     `
     $div.innerHTML = template;
     const $postContent = $post.querySelector('.post-content');
@@ -95,4 +94,16 @@ function displayDate(post, $post) {
 function displayMonthName(monthNumber) {
     const monthArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     return monthArray[monthNumber];
+}
+function displayDate3(post) {
+    const date = new Date(post.date);
+    return date.toLocaleString('pl-pl', { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' })
+}
+function displayDate2(post) {
+    const date = new Date(post.date);
+    const dayNumber = date.getDate()
+    const monthNumber = date.getMonth();
+    const monthName = displayMonthName(monthNumber);
+    const time = `${date.getHours()}:${date.getMinutes()}`
+    return `${dayNumber} ${monthName} ${time}`
 }
