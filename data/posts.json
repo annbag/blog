@@ -2,6 +2,7 @@
   "posts": [
     {
       "id": 1584042702958,
+      "date": 1584042702958,
       "body": "The slice() method returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included) where begin and end represent the index of items in that array. The original array will not be modified.",
       "comments": [
         {
@@ -16,6 +17,7 @@
     },
     {
       "id": 1585391476561,
+      "date": 1585391476561,
       "body": "The split() method divides a String into an ordered set of substrings, puts these substrings into an array, and returns the array.  The division is done by searching for a pattern; where the pattern is provided as the first parameter in the method's call.  ",
       "comments": [
         {
@@ -31,6 +33,7 @@
     {
       "body": "The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.",
       "id": 1585387788912,
+      "date": 1585387788912,
       "comments": [
         {
           "id": "comment-1585387800856",

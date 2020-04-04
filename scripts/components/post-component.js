@@ -80,10 +80,10 @@ function setCorrectFormComment(comments) {
 function displayDate(post, $post) {
     const $div = document.createElement('div');
     $div.classList.add('date');
-    const dayNumber = new Date(post.id).getDate()
-    const monthNumber = new Date(post.id).getMonth();
+    const dayNumber = new Date(post.date).getDate()
+    const monthNumber = new Date(post.date).getMonth();
     const monthName = displayMonthName(monthNumber);
-    const time = `${new Date(post.id).getHours()}:${new Date(post.id).getMinutes()}`
+    const time = `${new Date(post.date).getHours()}:${new Date(post.date).getMinutes()}`
     const template = `
         <a href="">${dayNumber} ${monthName} ${time}</a>
     `
