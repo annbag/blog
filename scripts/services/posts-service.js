@@ -5,6 +5,13 @@ async function fetchPosts() {
     return posts;
 }
 
+async function fetchPost(id) {
+    const url = `${CONFIG.postsUrl}/${id}`;
+    const response = await fetch(url);
+    const post = await response.json();
+    return post;
+}
+
 function savePost(post) {
     const url = CONFIG.postsUrl;
     const body = JSON.stringify(post);

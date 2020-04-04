@@ -84,7 +84,7 @@ function displayDate(post, $post) {
     const date2 = displayDate2(post);
 
     const template = `
-        <a href="">${date1} ${date2}</a>
+        <a href="#/posts/${post.id}">${date1} ${date2}</a>
     `
     $div.innerHTML = template;
     const $postContent = $post.querySelector('.post-content');
