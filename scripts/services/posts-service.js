@@ -25,14 +25,14 @@ function savePost(post) {
 }
 
 function removePost(id) {
-    const url = CONFIG.postsUrl + `/${id}`
+    const url = `${CONFIG.postsUrl}/${id}`
     fetch(url, {
         method: "delete"
     });
 }
 
 function editPost(post) {
-    const url = CONFIG.postsUrl + `/${post.id}`;
+    const url = `${CONFIG.postsUrl}/${post.id}`;
     const body = JSON.stringify(post)
     fetch(url, {
         headers: {

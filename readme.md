@@ -13,4 +13,7 @@
 * [x] Misc: Potwierdzenie usuwania posta i komentarza
 * [x] Komentarze: Prezentacja fikcyjnych awatarów
 * [x] Posty: Prezentacja czasu stworzenia posta
-* [ ] Posty: Prezentacja pojedynczego posta (R)
+* [x] Posty: Prezentacja pojedynczego posta (R)
+* [ ] Stworzenie routing.js
+* [ ] Przekierowanie na stronę główną po usunięciu posta na jego widoku
+* [ ] Obsługa 404
