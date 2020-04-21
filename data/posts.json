@@ -12,6 +12,10 @@
         {
           "id": "comment-1585387989625",
           "body": "Example: let fruits = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango']; let citrus = fruits.slice(1, 3); Fruits contains ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'] and citrus contains ['Orange','Lemon']"
+        },
+        {
+          "id": "comment-1587503227442",
+          "body": "Example: let example = ['a', 'b', 'c', 'd', 'e']; let example2 = example.slice(1); example2 contains ['b', 'c', 'd', 'e',]"
         }
       ]
     },
@@ -27,6 +31,10 @@
         {
           "id": "comment-1584874452565",
           "body": "Example: const myString = 'Hello World. How are you doing?'; const splits = myString.split(' ', 3); splits display: ['Hello', 'World.', 'How']"
+        },
+        {
+          "id": "comment-1587503488066",
+          "body": "Example: const str = 'Hello my friend'; const words = str.split(' ') //  [\"Hello\", \"my\", \"friend\"]; const letters = str.split('') // [\"H\", \"e\", \"l\", \"l\", \"o\", \" \", \"m\", \"y\", \" \", \"f\", \"r\", \"i\", \"e\", \"n\", \"d\"]"
         }
       ]
     },
@@ -41,7 +49,11 @@
         },
         {
           "id": "comment-1585388303520",
-          "body": "Example: const months = ['Jan', 'March', 'April', 'June']; months.splice(1, 0, 'Feb'); Remove zero elements before index 1 and insert 'Feb'"
+          "body": "Example: const months = ['Jan', 'March', 'April', 'June']; months.splice(1, 0, 'Feb'); Remove zero elements before index 1 and insert 'Feb' // [\"Jan\", \"Feb\", \"March\", \"April\", \"June\"]"
+        },
+        {
+          "id": "comment-1587496325992",
+          "body": "Example: const numbers = [1, 2, 3, 4]; numbers.splice(1); // [2, 3, 4]; console.log(numbers) // [1]"
         }
       ]
     }

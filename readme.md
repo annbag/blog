@@ -14,6 +14,6 @@
 * [x] Komentarze: Prezentacja fikcyjnych awatarów
 * [x] Posty: Prezentacja czasu stworzenia posta
 * [x] Posty: Prezentacja pojedynczego posta (R)
-* [ ] Stworzenie routing.js
+* [x] Stworzenie routing.js
 * [ ] Przekierowanie na stronę główną po usunięciu posta na jego widoku
 * [ ] Obsługa 404
