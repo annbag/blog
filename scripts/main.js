@@ -3,7 +3,7 @@ window.addEventListener('hashchange', onHashChange)
 
 
 function main() {
-    const status = redirectToHomePage();
+    const status = isHomePage();
     if (status === false) {
         routing(routes);
     }

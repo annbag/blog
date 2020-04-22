@@ -4,12 +4,16 @@ const routes = [
     { path: '/not-found', handler: renderNotFoundPage }
 ];
 
-function redirectToHomePage() {
+function isHomePage() {
     if (location.hash === '') {
-        location.hash = '/'
+        redirectToHomePage();
         return true
     }
     return false
+}
+
+function redirectToHomePage() {
+    location.hash = '/'
 }
 
 function redirectNotFoundPage() {
