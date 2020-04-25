@@ -20,12 +20,13 @@ async function renderHomePage() {
     const outlet = document.querySelector('.outlet')
     outlet.innerHTML = template;
     const posts = await fetchPosts();
-
-    posts.forEach(renderPostPanel);
-    renderAddPostForm((post) => {
-        renderPostPanel(post);
-        savePost(post);
-    });
+    if (posts) {
+        posts.forEach(renderPostPanel);
+        renderAddPostForm((post) => {
+            renderPostPanel(post);
+            savePost(post);
+        });
+    }
 }
 
 function renderPostPanel(post) {
@@ -52,7 +53,14 @@ async function renderPostPage({ postId }) {
 
 function renderNotFoundPage() {
     const template = `
-        <div>Strona nie odnaleziona</div>`
+        <p>Strona nie odnaleziona</p>`
+    const outlet = document.querySelector('.outlet')
+    outlet.innerHTML = template;
+}
+
+function displayError() {
+    const template = `
+        <p>Upss.. coś poszło nie tak ☹</p>`
     const outlet = document.querySelector('.outlet')
     outlet.innerHTML = template;
 }
