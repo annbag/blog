@@ -5,11 +5,7 @@ const routes = [
 ];
 
 function isHomePage() {
-    if (location.hash === '') {
-        redirectToHomePage();
-        return true
-    }
-    return false
+    return (location.hash === '')
 }
 
 function redirectToHomePage() {

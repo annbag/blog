@@ -4,58 +4,16 @@ window.addEventListener('hashchange', onHashChange)
 
 function main() {
     const status = isHomePage();
-    if (status === false) {
+
+    if (status) {
+        redirectToHomePage();
+    } else {
         routing(routes);
     }
 }
 
 function onHashChange() {
     routing(routes);
-}
-
-async function renderHomePage() {
-    const template = `
-        <div class="add-post"></div>
-        <div class="posts"></div>`
-    const outlet = document.querySelector('.outlet')
-    outlet.innerHTML = template;
-    const posts = await fetchPosts();
-    if (posts) {
-        posts.forEach(renderPostPanel);
-        renderAddPostForm((post) => {
-            renderPostPanel(post);
-            savePost(post);
-        });
-    }
-}
-
-function renderPostPanel(post) {
-    const $post = renderPost(post);
-    renderAddCommentForm(post, $post, (comment) => {
-        post.comments.push(comment);
-        const $ul = $post.querySelector('.comments ul');
-        renderComment($ul, post, comment, ($comment) => {
-            removeComment(post, comment, $comment);
-        });
-        editPost(post);
-    });
-    renderComments(post, $post);
-}
-
-async function renderPostPage({ postId }) {
-    const template = `
-        <div class="posts"></div>`
-    const outlet = document.querySelector('.outlet')
-    outlet.innerHTML = template;
-    const post = await fetchPost(postId);
-    renderPostPanel(post)
-}
-
-function renderNotFoundPage() {
-    const template = `
-        <p>Strona nie odnaleziona</p>`
-    const outlet = document.querySelector('.outlet')
-    outlet.innerHTML = template;
 }
 
 function displayError() {
