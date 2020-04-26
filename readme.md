@@ -16,4 +16,5 @@
 * [x] Posty: Prezentacja pojedynczego posta (R)
 * [x] Stworzenie routing.js
 * [x] Przekierowanie na stronę główną po usunięciu posta na jego widoku
-* [ ] Obsługa 404
+* [x] Obsługa problemów połączenia do serwera
+* [x] Obsługa 404 (not found)
