@@ -1,25 +1,17 @@
 async function fetchPosts() {
-    try {
-        const url = CONFIG.postsUrl;
-        const response = await fetch(url);
-        const posts = await response.json();
-        return posts;
-    } catch (err) {
-        displayError()
-        console.error(err)
-    }
+    const url = CONFIG.postsUrl;
+    const response = await fetch(url);
+    const posts = await response.json();
+    return posts;
+
 }
 
 async function fetchPost(id) {
-    try {
-        const url = `${CONFIG.postsUrl}/${id}`;
-        const response = await fetch(url);
-        const post = await response.json();
-        return post;
-    } catch (err) {
-        displayError()
-        console.error(err)
-    }
+    const url = `${CONFIG.postsUrl}/${id}`;
+    const response = await fetch(url);
+    const post = await response.json();
+    return post;
+
 }
 
 function savePost(post) {

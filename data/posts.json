@@ -37,25 +37,6 @@
           "body": "Example: const str = 'Hello my friend'; const words = str.split(' ') //  [\"Hello\", \"my\", \"friend\"]; const letters = str.split('') // [\"H\", \"e\", \"l\", \"l\", \"o\", \" \", \"m\", \"y\", \" \", \"f\", \"r\", \"i\", \"e\", \"n\", \"d\"]"
         }
       ]
-    },
-    {
-      "body": "The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.",
-      "id": 1585387788912,
-      "date": 1585387788912,
-      "comments": [
-        {
-          "id": "comment-1585387800856",
-          "body": "Syntax: let arrDeletedItems = array.splice(start, deleteCount, newElement)"
-        },
-        {
-          "id": "comment-1585388303520",
-          "body": "Example: const months = ['Jan', 'March', 'April', 'June']; months.splice(1, 0, 'Feb'); Remove zero elements before index 1 and insert 'Feb' // [\"Jan\", \"Feb\", \"March\", \"April\", \"June\"]"
-        },
-        {
-          "id": "comment-1587496325992",
-          "body": "Example: const numbers = [1, 2, 3, 4]; numbers.splice(1); // [2, 3, 4]; console.log(numbers) // [1]"
-        }
-      ]
     }
   ]
 }
